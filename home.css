@@ -87,13 +87,13 @@ body {
 }
 
 /* RESPONSIVE */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
    .session,
    .session2,
    .session3 {
       width: calc(50% - 20px);
    }
-}
+} */
 
 /* SLIDER IMAGE */
 .sliderSlick img {

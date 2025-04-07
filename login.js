@@ -26,7 +26,7 @@ function signin(event) {
 const inputUsernameRegister = document.querySelector("#Email");
 const inputPasswordRegister = document.querySelector("#Password");
 function signup(event) {
-    event.preventDefault(); 
+    event.preventDefault();
     const email = inputUsernameRegister.value;
     const password = inputPasswordRegister.value;
 
@@ -42,7 +42,7 @@ function signup(event) {
             };
             localStorage.setItem(email, JSON.stringify(user));
             alert("Registration successful!");
-            window.location.href = "index.html";  
+            window.location.href = "login.html";
         }
     }
 }

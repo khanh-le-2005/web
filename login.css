@@ -1,84 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins", sans-serif;
+}
 
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    margin: 0;
+    min-height: 100vh;
+    background-color: steelblue;
+    /* background: url(img/img.jpg) no-repeat; */
     background-size: cover;
-    background-image: url(anh/hinh-nen-may-tinh-4k-1.jpg);
+    background-position: center;
 }
 
-.login-container {
-    background-color: rgba(255, 255, 255, 0.2);  /* nền mờ trắng nhẹ */
-    padding: 25px;
-    border-radius: 12px;
-    border: 1px solid rgba(255, 255, 255, 0.5);
-    width: 300px;
-    backdrop-filter: blur(0.7px);  /* làm mờ rõ hơn */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* đổ bóng đẹp hơn */
-
+.login {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: #fff;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(0px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
-.login-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.login-form h2 {
+.login h1 {
+    font-size: 36px;
     text-align: center;
-    margin-bottom: 20px;
-
 }
 
-.form-group {
-    margin-bottom: 15px;
-
+.login .user {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
 }
 
-.form-group label {
-    font-weight: bold;
-    display: block;
-    margin-bottom: 5px;
-}
-
-.form-group input {
-    padding: 8px;
-    height: 15px;
-    font-size: 14px;
-    border: 1px solid #ccc;
-    border-radius: 7px;
-    width: 90%;
-    background-color: transparent; 
-    outline: none; 
-
-
-}
-
-.button-group {
-    display: flex;
-    justify-content: center;
-    gap: 10px; /* khoảng cách giữa 2 nút */
-    width: 50%;
-}
-
-.button {
-    flex: 1; /* mỗi nút chiếm đều 50% */
-    padding: 10px;
-    background-color: #4CAF50; 
-    color: white;
-    border-radius: 4px;
+.user input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
     border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    font-size: 16px;
+    /* color:#fff; */
+    padding: 20px 45px 20px 20px;
+
+}
+
+.user input {
+    color: aliceblue;
+}
+
+.user i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+}
+
+.login .rember {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+
+.rember label input {
+    /* accent-color: #fff; */
+    max-width: 20px;
+}
+
+.rember a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.rember a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
     cursor: pointer;
-    font-weight: bold;
-    width: 50%;
-    
+    font-size: 16px;
+    color: #333;
+    font-weight: 600;
 }
 
-
-.button:hover {
-    background-color: #0099FF;
+.login .register_link {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
 }
 
+.login a {
+    color: #fff;
+    margin: 3px;
+    font-size: 14.5px;
+}
